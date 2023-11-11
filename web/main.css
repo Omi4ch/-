@@ -1,0 +1,101 @@
+body {
+    background-color: #00ff37;
+}
+
+.text {
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#Information {
+    display: block;
+    border: none;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 20px;
+    color: red;
+    outline: none;
+    width: 580px;
+    height: 100px;
+    font-size: 28px;
+    font-family: "Trebuchet MS";
+}
+
+
+#Russia{
+    opacity: .9;
+    display: inline;
+    border: none;
+    background: blue;
+    border-radius: 10px;
+    color: red;
+    outline: none;
+    width: 152.2px;
+    font-size: 25px;
+    cursor: pointer;
+    float:center;
+    margin-top: 15px;
+}
+
+#Maths{
+    opacity: .9;
+    display: inline;
+    border: none;
+    background: blue;
+    border-radius: 10px;
+    color: red;
+    outline: none;
+    width: 152.2px;
+    font-size: 25px;
+    cursor: pointer;
+    float:center;
+    margin-top: 15px;
+}
+
+#Literatura{
+    opacity: .9;
+    display: inline;
+    border: none;
+    background: blue;
+    border-radius: 10px;
+    color: red;
+    outline: none;
+    width: 152.2px;
+    font-size: 25px;
+    cursor: pointer;
+    float:center;
+    margin-top: 15px;
+}
+
+#IT{
+    opacity: .9;
+    display: inline;
+    border: none;
+    background: blue;
+    border-radius: 10px;
+    color: red;
+    outline: none;
+    width: 152.2px;
+    font-size: 25px;
+    cursor: pointer;
+    float:center;
+    margin-top: 15px;
+}
+
+#info {
+    display: block;
+    border: none;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 20px;
+    color: red;
+    outline: none;
+    width: 580px;
+    height: 100px;
+    font-size: 28px;
+    font-family: "Trebuchet MS";
+}
+
+
