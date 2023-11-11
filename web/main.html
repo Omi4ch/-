@@ -18,7 +18,7 @@
         <input id="Information" type="text" placeholder="Введите данные, которые нужно проверить" required = "">
 
         <button id = "Russia"> 
-            <div class="text"> Вопрос по русскому языку </div>
+            <div class="text"> Проверка на орфографию </div>
         </button>
         <button id = "Maths"> 
             <div class="text"> Вопрос по математике </div>
@@ -43,6 +43,39 @@
 
             jQuery('#Maths').on('click', function() {
             display_maths();
+
+            });
+
+            async function display_Russia() {
+                let display = document.getElementById('Information').value;
+                let res = await eel.Russia(display)();
+                document.getElementById('info').innerHTML = res;
+            
+            }
+            jQuery('#Russia').on('click', function() {
+            display_Russia();
+
+            });
+
+            async function display_Literatura() {
+                let display = document.getElementById('Information').value;
+                let res = await eel.Literatura(display)();
+                document.getElementById('info').innerHTML = res;
+            
+            }
+            jQuery('#Literatura').on('click', function() {
+            display_Literatura();
+
+            });
+
+            async function display_IT() {
+                let display = document.getElementById('Information').value;
+                let res = await eel.IT(display)();
+                document.getElementById('info').innerHTML = res;
+            
+            }
+            jQuery('#IT').on('click', function() {
+            display_IT();
 
             });
             </script>

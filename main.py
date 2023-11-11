@@ -6,43 +6,35 @@ import g4f
 def Russia (display):
     response = g4f.ChatCompletion.create(
         model="gpt-3.5-turbo",
-        messages=[{"role":"user","content":display + 'на русском'}],
-        stream=True,
+        messages=[{"role":"user","content":'Проверить на ошибки текст' + display}],
     )
-    for message in response:
-        print (message,flush=True,end='')
+    return response
 
 @eel.expose
 def maths (display):
     response = g4f.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[{"role":"user","content":display + 'на русском'}],
-        stream=True,
     )
-    for message in response:
-      print (message,flush=True,end='')
+    return response
         
 @eel.expose
 def Literatura (display):
     response = g4f.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role":"user","content":'Напиши сочинение на тему' + display + 'на русском'}],
-        stream=True,
+    model="gpt-3.5-turbo",
+    messages=[{"role":"user","content":'Напиши сочинение на тему' + display + 'на русском'}],
     )
-    for message in response:
-        print (message,flush = True, end='')
+    return response
 
 @eel.expose
 def IT (display):
     response = g4f.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role":"user","content":'Напиши код на тему' + display + 'на pythone'}],
-        stream=True,
+    model="gpt-3.5-turbo",
+    messages=[{"role":"user","content":'Напиши код на тему' + display + 'на языке Python'}],
     )
-    for message in response:
-        print (message,flush = True, end='')
+    return response
 
 
-eel.init('C:/Users/egork/OneDrive/Рабочий стол/Хакатон ноябрь 2023/web')
+eel.init('web')
 
-eel.start('main.html', size=(651, 651), port = 8080)
+eel.start('main.html', size=(651, 651))
