@@ -37,4 +37,4 @@ def IT (display):
 
 eel.init('web')
 
-eel.start('main.html', size=(651, 651))
+eel.start('main.html', size=(680, 651))

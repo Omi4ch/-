@@ -6,6 +6,7 @@
         <script src = 'eel.js'></script>
         <!-- иконку добавить !!!!!! -->
         <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/png" href="/favicon.png">
         <script type="text/javascript" src="/eel.js"></script>
         <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
         <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
@@ -14,23 +15,40 @@
 
     </head>
     <body>
-       
-        <input id="Information" type="text" placeholder="Введите данные, которые нужно проверить" required = "">
-
-        <button id = "Russia"> 
-            <div class="text"> Проверка на орфографию </div>
-        </button>
-        <button id = "Maths"> 
-            <div class="text"> Вопрос по математике </div>
-        </button>
-        <button id = "Literatura"> 
-            <div class="text"> Написание сочинения для литературы </div>
-        </button>
-        <button id = "IT"> 
-            <div class="text"> Написание кода для Python </div>
-        </button>
-
-        <div id="info"></div>
+        <div class="menu">
+            <div class="menu-text">ППШ</div>
+        </div>
+        <div class="osnova">
+            <div class="FAQ">
+            <div class="FAQ-text">Как правильно задавать вопрос -></div>
+            <button id = "FAQ-button"> <a href="https://vc.ru/chatgpt/594829-kak-sostavit-idealnyy-zapros-k-chatgpt-poshagovoe-rukovodstvo-primery">
+            <div class="FAQ-button-text"> FAQ </div>
+            </a>
+            </button>
+            </div>
+            <div class="Mesto-raboti">
+                <input id="Information" type="text" placeholder="Введите ваш запрос" required = "">
+                <div class="Otvet">
+                    <div class="Otvet-text">Ответ</div>
+                </div>
+                <div id="info"></div>
+            </div>
+            <div class="Knopki">
+                <div class="Knopki-text">Что вы хотите сделать?</div>
+                <button id = "Russia"> 
+                    <div class="text"> Проверить текст на ошибки </div>
+                </button>
+                <button id = "Maths"> 
+                    <div class="text"> Решить математику </div>
+                </button>
+                <button id = "Literatura"> 
+                    <div class="text"> Написание сочинения </div>
+                </button>
+                <button id = "IT"> 
+                    <div class="text"> Написать код для Python </div>
+                </button>
+            </div>
+        </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
         <script type="text/javascript">

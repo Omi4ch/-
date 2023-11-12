@@ -1,5 +1,137 @@
 body {
-    background-color: #00ff37;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+.menu{
+    width: 651px;
+    height: 42px;
+    flex-shrink: 0;
+
+}
+
+.menu-text{
+    color: rgba(248, 181, 0, 0.80);
+    text-align: left;
+    font-family: "Trebuchet MS";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100.449%; /* 40.18px */
+}
+
+.FAQ-text{
+    display: inline;
+    width: 446px;
+    height: 104px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: rgba(255, 140, 0, 0.80);
+    text-align: left;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100.449%; /* 20.09px */
+}
+
+#FAQ-button{
+    width: 148px;
+    height: 46px;
+    flex-shrink: 0;
+    background: rgba(255, 140, 0, 0.80);
+    display: inline;
+    cursor: pointer;
+    float: right;
+}
+
+.FAQ-button-text{
+    display: flex;
+    width: 113px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100.449%; /* 40.18px */
+}
+
+a {
+    text-decoration: none;
+  }
+
+.Otvet{
+    margin-top: 5px;
+    width: 380px;
+    height: 53px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(255, 140, 0, 0.80);
+}
+
+.Otvet-text{
+    display: flex;
+    width: 336px;
+    height: 29px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+#info {
+    margin-top: 5px;
+    display: block;
+    width: 380px;
+    height: 324px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.70);
+    font-size: 28px;
+    font-family: "Trebuchet MS";
+    color: rgba(127, 127, 127, 0.70);
+
+}
+
+.Mesto-raboti{
+    margin-top: 30px;
+    display: inline;
+    float: left;
+}
+
+.Knopki{
+    margin-top: 30px;
+    display: inline; 
+    float: right;   
+}
+
+.Knopki-text{
+    display: flex;
+    width: 199px;
+    height: 39px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
 
 .text {
@@ -10,92 +142,106 @@ body {
 }
 
 #Information {
-    display: block;
+    display: inline;
     border: none;
-    background: rgba(255, 255, 255, .5);
+    fill: rgba(255, 255, 255, 0.70);
     border-radius: 10px;
     padding: 20px;
-    color: red;
+    color: rgba(127, 127, 127, 0.70);
     outline: none;
-    width: 580px;
-    height: 100px;
     font-size: 28px;
     font-family: "Trebuchet MS";
+    width: 338px;
+    height: 51px;
+    flex-shrink: 0;
 }
 
 
 #Russia{
     opacity: .9;
-    display: inline;
-    border: none;
-    background: blue;
-    border-radius: 10px;
-    color: red;
-    outline: none;
-    width: 152.2px;
-    font-size: 25px;
+    display: block;
+    width: 222px;
+    height: 56px;
+    flex-shrink: 0;
     cursor: pointer;
     float:center;
     margin-top: 15px;
+    border-radius: 10px;
+    background: rgba(255, 140, 0, 0.80);
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
 
 #Maths{
     opacity: .9;
-    display: inline;
-    border: none;
-    background: blue;
-    border-radius: 10px;
-    color: red;
-    outline: none;
-    width: 152.2px;
-    font-size: 25px;
+    display: block;
+    width: 222px;
+    height: 56px;
+    flex-shrink: 0;
     cursor: pointer;
     float:center;
     margin-top: 15px;
+    border-radius: 10px;
+    background: rgba(255, 140, 0, 0.80);
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
 
 #Literatura{
     opacity: .9;
-    display: inline;
-    border: none;
-    background: blue;
-    border-radius: 10px;
-    color: red;
-    outline: none;
-    width: 152.2px;
-    font-size: 25px;
+    display: block;
+    width: 222px;
+    height: 56px;
+    flex-shrink: 0;
     cursor: pointer;
     float:center;
     margin-top: 15px;
+    border-radius: 10px;
+    background: rgba(255, 140, 0, 0.80);
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
 
 #IT{
     opacity: .9;
-    display: inline;
-    border: none;
-    background: blue;
-    border-radius: 10px;
-    color: red;
-    outline: none;
-    width: 152.2px;
-    font-size: 25px;
+    display: block;
+    width: 222px;
+    height: 56px;
+    flex-shrink: 0;
     cursor: pointer;
     float:center;
     margin-top: 15px;
+    border-radius: 10px;
+    background: rgba(255, 140, 0, 0.80);
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
 
-#info {
-    display: block;
-    border: none;
-    background: rgba(255, 255, 255, .5);
-    border-radius: 10px;
-    padding: 20px;
-    color: red;
-    outline: none;
-    width: 580px;
-    height: 300px;
-    font-size: 28px;
-    font-family: "Trebuchet MS";
+.osnova{
+    width: 651px;
+    height: 610px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #FCEABB 0%, rgba(248, 181, 0, 0.67) 100%);
 }
 
 
